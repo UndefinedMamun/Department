@@ -21,7 +21,8 @@ mongoose
     useNewUrlParser: true,
     useCreateIndex: true
   })
-  .then(() => console.info("Mongodb Connected succesfully..."));
+  .then(() => console.info("Mongodb Connected succesfully..."))
+  .catch(err => console.log(err.message));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
