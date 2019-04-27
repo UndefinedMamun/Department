@@ -14,7 +14,7 @@ const highestPaid = require("./routes/highestPaid");
 const avgDuration = require("./routes/avgDuration");
 
 var app = express();
-const dbUri = "mongodb://localhost/nodeMongo";
+const dbUri = process.env.dbUri || "mongodb://localhost/nodeMongo";
 
 mongoose
   .connect(dbUri, {
