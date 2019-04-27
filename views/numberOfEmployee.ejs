@@ -1,0 +1,14 @@
+<%- include('_header'); %>
+
+<section class="col-12 mt-5">
+  <h3>Number of Employee in departments</h3>
+  <ul>
+    <% depts.forEach(function(dept){ %>
+    <li>
+      <%- dept.dept_name %> -
+      <%- dept.count %>
+    </li>
+    <% }) %>
+  </ul>
+</section>
+<%- include('_footer'); %>

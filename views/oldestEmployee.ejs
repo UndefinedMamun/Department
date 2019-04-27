@@ -1,0 +1,17 @@
+<%- include('_header'); %>
+<div class="container">
+  <section>
+    <div class="card mt-5">
+      <div class="card-body">
+        <h2>Male:
+          <%= oldest.male.first_name+" "+oldest.male.last_name %>
+        </h2>
+        <h2>
+          Female:
+          <%= oldest.female.first_name+" "+oldest.female.last_name %>
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+<%- include('_footer'); %>
