@@ -38,7 +38,7 @@ router.get("/", function(req, res, next) {
         const date = new Date(single.durationAvg);
         const time = {
           year: date.getFullYear(),
-          month: date.getMonth() + 1,
+          month: date.getMonth(),
           day: date.getDay()
         };
         single.time = time;
